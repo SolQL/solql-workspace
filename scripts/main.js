@@ -9,7 +9,7 @@ const { ethers } = require('ethers');
 
 async function main() {
 
-    const provider = new ethers.providers.JsonRpcProvider('YOUR PROVIDER URL HERE');
+    const provider = new ethers.providers.JsonRpcProvider(`<YOUR PROVIDER URL HERE>`);
     const contractName = 'Query';
     const chainId = '5';
 
