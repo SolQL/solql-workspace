@@ -12,9 +12,9 @@ contract Query {
 
         IUniswapV2Factory factory = IUniswapV2Factory(0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f);
 
-        address[1] memory tokens;
+        address[100] memory tokens;
 
-        for(uint i; i < 1; i++) {
+        for(uint i; i < 100; i++) {
             address pairAddress = factory.allPairs(i);
             IUniswapV2Pair pair = IUniswapV2Pair(pairAddress);
             tokens[i] = pair.token0();
